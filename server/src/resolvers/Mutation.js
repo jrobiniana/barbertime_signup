@@ -1,8 +1,6 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const { APP_SECRET } = require('../utils');
-const API_KEY = '5c3a9cb136742366d307cbb3a591490b-a09d6718-f54c9b08';
-const DOMAIN = 'sandboxb4ea81e860794c37b4e95a69b6e072fa.mailgun.org';
+const { APP_SECRET, API_KEY, DOMAIN } = require('../utils');
 const mailgun = require('mailgun-js')({apiKey: API_KEY, domain: DOMAIN});
 
 async function signup(parent, args, context, info) {

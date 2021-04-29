@@ -1,6 +1,9 @@
 const jwt = require('jsonwebtoken');
 const APP_SECRET = 'GraphQL-is-aw3some';
 
+const API_KEY = 'API_KEY';
+const DOMAIN = 'DOMAIN_NAME';
+
 function getTokenPayload(token) {
   return jwt.verify(token, APP_SECRET);
 }
